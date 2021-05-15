@@ -1,0 +1,381 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "PT Sans", sans-serif;
+}
+
+#first-view header {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 40px;
+	margin: auto;
+	background-color: #202020;
+	z-index: 1000;
+}
+
+#first-view header h4 {
+	font-size: 18px;
+	font-weight: 150;
+	padding-left: 20px;
+	color: #fff;
+}
+
+#first-view header ul {
+	list-style: none;
+	display: flex;
+}
+
+#first-view header ul li {
+	padding: 5px 15px;
+}
+
+#first-view header ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#first-view header ul li a:hover {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#first-view .showcase {
+	text-align: center;
+	padding: 20px;
+	height: 100vh;
+	background: url(img/showcase.jpg) no-repeat center center/cover;
+}
+
+#first-view .showcase h1 {
+	color: #fff;
+	font-size: 70px;
+	padding: 100px 0 50px;
+}
+
+#first-view .showcase h3 {
+	color: #fff;
+	font-size: 30px;
+	padding-bottom: 30px;
+    line-height: 40px;
+}
+
+#first-view .showcase p {
+	color: #fff;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+/* MUSIC */
+
+#music {
+	background: #202020;
+	color: rgb(245, 237, 237);
+	text-align: center;
+	padding: 30px 40px;
+}
+
+#music h1 {
+	font-size: 2.7rem;
+	padding-bottom: 40px;
+}
+
+#music h1 i {
+	padding-right: 10px;
+}
+
+#music h2 {
+	font-size: 1.8rem;
+	padding-bottom: 2.5rem;
+}
+
+.mockup {
+	width: 100%;
+}
+
+/* VIDEO */
+
+#video {
+	background: #eee;
+	color: rgb(51, 51, 51);
+	text-align: center;
+	padding: 30px 40px;
+}
+
+#video h2 {
+	font-size: 2rem;
+	padding: 2rem;
+}
+
+#video a {
+	background: rgb(26, 26, 90);
+}
+
+/* EXTRA */
+
+#extra {
+	height: 100vh;
+	background: url(img/section-bg.jpg) no-repeat bottom/cover;
+	text-align: center;
+	color: #eee;
+	padding: 160px 40px;
+}
+
+#extra h3 {
+	font-size: 2rem;
+	padding-bottom: 3rem;
+	line-height: 50px;
+}
+
+/* GIFT CARDS */
+
+#gift-cards {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px;
+	color: rgb(51, 51, 51);
+}
+
+#gift-cards img {
+	width: 47%;
+	height: 47%;
+}
+
+#gift-cards .more {
+	padding-left: 20px;
+}
+
+#gift-cards .more h2 {
+	font-size: 25px;
+	padding-bottom: 5px;
+}
+
+#gift-cards .more p {
+	font-size: 17px;
+	padding: 5px 0 20px;
+}
+
+#gift-cards .more span {
+	display: inline-block;
+	padding: 10px 0;
+	color: rgb(26, 26, 90);
+}
+
+/* FOOTER */
+
+footer .about {
+	height: 300px;
+	background: #202020;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: left;
+}
+
+footer .about ul {
+	list-style: none;
+	padding-left: 30px;
+}
+
+footer .about ul li:first-child {
+	width: 100%;
+	color: #fff;
+	font-size: 20px;
+	padding-bottom: 15px;
+	border-bottom: 0.1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer .about ul li:nth-child(2) {
+	padding-top: 15px;
+}
+
+footer .about ul li {
+	padding: 2px 0;
+}
+
+footer .about ul li a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 14px;
+}
+
+footer .copyright {
+	background-color: #272626;
+	color: #eee;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	padding: 20px;
+}
+
+/* UTILITIES */
+
+.lead {
+	font-size: 1.3rem;
+	padding-bottom: 2rem;
+	line-height: 30px;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	padding: 15px 20px;
+	color: #fff;
+	background: rgb(192, 24, 24);
+	margin-bottom: 25px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+	footer .about {
+		display: none;
+	}
+
+	#gift-cards {
+		flex-direction: column;
+	}
+
+	#gift-cards img {
+		width: 80%;
+		height: 80%;
+		margin-bottom: 50px;
+	}
+}
+
+/* @media screen and (max-width: 1030px) and (max-height: 1500px) {
+    #first-view .showcase,
+    #extra {
+        height: 50vh;
+    }
+} */
+
+@media screen and (max-width: 600px) {
+    #first-view .showcase,
+    #extra {
+        height: 70vh;
+    }
+
+    #first-view .showcase p {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	#first-view .showcase {
+		height: 50vh;
+	}
+
+	#first-view .showcase h1 {
+		font-size: 50px;
+        padding: 50px 0 30px;
+	}
+
+	#first-view .showcase h3 {
+		font-size: 25px;
+        padding: 0;
+	}
+
+	#first-view .showcase p {
+		display: none;
+	}
+
+    #first-view header h4 {
+        font-size: 15px;
+    }
+
+    #first-view header ul li a {
+        font-size: 12px;
+    }
+
+    #music h1 {
+        font-size: 2rem;
+    }
+
+    #music h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #extra {
+        height: 50vh;
+    }
+
+    #extra p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #extra {
+        padding: 80px 30px;
+        height: 50vh;
+    }
+
+    .lead {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #extra {
+        padding: 40px 30px;
+        height: 50vh;
+    }
+
+    #video h2 {
+        font-size: 1.5rem;
+    }
+
+    #music .small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #first-view .showcase,
+    #extra {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #first-view header ul li a {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #first-view .showcase h3,
+    #extra h3 {
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #first-view .showcase h3 {
+        line-height: 25px;
+        font-size: 20px;
+    }
+
+    #first-view .showcase h1 {
+        padding: 50px 0 10px;
+        font-size: 40px;
+    }
+
+    #first-view header h4 {
+        font-size: 11px;
+    }
+
+    #first-view header ul li a {
+        font-size: 8px;
+    }
+}
